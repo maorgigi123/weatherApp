@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 import WEATHER_API_KEY from './apikey.js';
 const apiKey = WEATHER_API_KEY
+=======
+const apiKey = [apiKey]
+>>>>>>> 1f708d7ab82636e657e3039078052d7a3e0d1eec
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q="
 
 
