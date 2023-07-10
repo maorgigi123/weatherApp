@@ -1,4 +1,5 @@
-const apiKey = "ee945def376fb47fb072326967afb351"
+import WEATHER_API_KEY from './apikey.js';
+const apiKey = WEATHER_API_KEY
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q="
 
 
@@ -32,6 +33,7 @@ async function getWeather(city)
 
 	}
 	const data = await resp.json();
+	console.log(data);
 	document.querySelector(".temp").innerHTML = Math.round(data.main.temp) +"°C";
 	document.querySelector(".city").innerHTML = data.name;
 	document.querySelector(".humidity").innerHTML = data.main.humidity +"%";
